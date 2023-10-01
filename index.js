@@ -42,5 +42,7 @@ app.all('*', (req, res) => {
     
     res.sendStatus(500);
 });
-
-module.exports = app;
+app.listen(8080,()=>{
+    console.log('app started 8080')
+})
+// module.exports = app;
